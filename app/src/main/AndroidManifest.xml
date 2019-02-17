@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bw">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".App"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.UserRegisterActivity" />
+        <activity android:name=".activity.HomeViewpageActivity" android:launchMode="singleTask"/>
+        <activity android:name=".activity.my.MyParticularsActivity" android:launchMode="standard"/>
+        <activity android:name=".activity.my.MyAddressActivity"/>
+        <activity android:name=".fragment.home.CommodityDetails"/>
+        <activity android:name=".activity.shopping.ShoppingAddressActivity"/>
+        <activity android:name=".activity.orderform.OrderFormListActivity"/>
+        <activity android:name=".activity.orderform.PaymentOrderFromActivity"/>
+        <activity android:name=".activity.orderform.PaymentSuccessActivity" android:launchMode="singleTop"/>
+        <activity android:name=".activity.my.MyNewAddressActivity"/>
+        <activity android:name=".activity.my.MyFootprintActivity"/>
+        <activity android:name=".activity.my.MyWallet"/>
+        <activity android:name=".activity.my.MyWalletDataActivity"/>
+        <activity android:name=".activity.my.AddressUpDataactivity"/>
+        <activity android:name=".activity.my.MyCircleActivity"/>
+    </application>
+
+</manifest>
